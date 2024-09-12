@@ -18,7 +18,7 @@
 
 <body>
 
-    <div id="mainWrapper" style="display: flex; flex-direction: column; min-height: 65vh;">
+    <div id="mainWrapper" class="mainWrapper">
 
         <!-- <header>
 
@@ -61,16 +61,18 @@
 
         <!-- <div id="testText" style="text-align: center;"></div> -->
 
-        <div style="margin-top: auto; margin-bottom: auto;">
+        <div class="nameWrapper" id="nameWrapper">
             <h1 class="display-6" style="text-align: center;">
                 <a id="nameLink" class="link-body-emphasis link-underline link-underline-opacity-0"
                     data-bs-toggle="collapse" href="#collapseAll" aria-expanded="false" aria-controls="collapseAll"
-                    style="padding: 8px; padding-top: 0; font-size: 2.4rem; font-weight: 600;">
-                    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
-                        { 
-                            <div id="fullStack" style="font-size: 1.8rem; width: 9rem; margin-left: 0.3rem;">Full Stack</div>
-                            <div style="font-size: 1.8rem;">Developer:</div>
-                        
+                    style="padding-top: 0; font-size: 2.4rem; font-weight: 600;">
+                    <div
+                        style="height: 5rem; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        {
+                        <div id="fullStack" style="font-size: 1.8rem; width: 9rem; margin-left: 0.3rem;">Full Stack
+                        </div>
+                        <div style="font-size: 1.8rem;">Developer:</div>
+
                         <div id="firstName" style="width: 8rem; margin-left: 1.2rem;">Eugene</div>
                         <div id="lastName" style="width: 15rem; ">Smyshliaev</div> }
                     </div>
@@ -78,16 +80,63 @@
             </h1>
         </div>
 
+        <script>
+            const nameWrapper = document.getElementById('nameWrapper');
+
+            nameWrapper.addEventListener('click', () => {
+                nameWrapper.classList.toggle('sticky');
+            })
+        </script>
+
+
 
         <div class="collapse" id="collapseAll">
 
 
-            <section id="bio" style="scroll-margin-top: 120px">
+
+            <section id="bio" style="scroll-margin-top: 120px"></section>
+
+            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                <div class="container">
+
+                    <h1 class="display-6" style="text-align: center;"> <a
+                            class="link-body-emphasis link-underline link-underline-opacity-0" data-bs-toggle="collapse"
+                            href="#collapseBio" aria-expanded="false" aria-controls="collapseBio">
+                            { 0: Bio }</a></h1>
+
+                    <div class="collapse show" id="collapseBio">
+                        <p class="lead">
+                            <img id="photoBio" src="./20240905_183344_1.jpg" class="img-fluid lazyload rounded-circle"
+                                alt="...">
+
+                            Born in Ukraine and raised in Russia, I am an engineer in the field of
+                            nuclear
+                            energy.
+                            A technically oriented person with a broad perspective and deep understanding of
+                            processes,
+                            focused on the future and seeking opportunities to realize myself along the way.
+                            Besides that, I am a kind and cheerful person, a caring father and husband, and my
+                            final
+                            project
+                            was about hamsters. Actually, it wasn't, but it was about them too. And I also love
+                            simplicity,
+                            which is, of course, clearly reflected in my portfolio.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            </section>
+
+
+            <!-- <section id="bio" style="scroll-margin-top: 120px">
 
                 <div class="jumbotron jumbotron-fluid "
-                    style="margin-top: 56px; margin-left: auto; margin-right: auto;">
+                    style="margin-top: 56px">
                     <div class="container">
-                        <h1 id="bio" class="display-6" style="text-align: center;">
+                        <h1 class="display-6" style="text-align: center;">
                             <a class="link-body-emphasis link-underline link-underline-opacity-0"
                                 data-bs-toggle="collapse" href="#collapseBio" aria-expanded="false"
                                 aria-controls="collapseBio">
@@ -96,24 +145,26 @@
                         </h1>
 
                         <div class="collapse" id="collapseBio" style="display: flex; flex-direction: row;">
-                            <div>
-                                <img src="./20240905_183344_1.jpg" class="img-fluid lazyload rounded-circle" alt="..."
-                                    style="width: 50% ;">
-                            </div>
-                            <div>
-                                <p class="lead">Born in Ukraine and raised in Russia, I am an engineer in the field of
-                                    nuclear
-                                    energy.
-                                    A technically oriented person with a broad perspective and deep understanding of
-                                    processes,
-                                    focused on the future and seeking opportunities to realize myself along the way.
-                                    Besides that, I am a kind and cheerful person, a caring father and husband, and my
-                                    final
-                                    project
-                                    was about hamsters. Actually, it wasn't, but it was about them too. And I also love
-                                    simplicity,
-                                    which is, of course, clearly reflected in my portfolio.</p>
-                            </div>
+
+
+                            <p class="lead">
+                                <img id="photoBio" src="./20240905_183344_1.jpg"
+                                    class="img-fluid lazyload rounded-circle" alt="...">
+
+                                Born in Ukraine and raised in Russia, I am an engineer in the field of
+                                nuclear
+                                energy.
+                                A technically oriented person with a broad perspective and deep understanding of
+                                processes,
+                                focused on the future and seeking opportunities to realize myself along the way.
+                                Besides that, I am a kind and cheerful person, a caring father and husband, and my
+                                final
+                                project
+                                was about hamsters. Actually, it wasn't, but it was about them too. And I also love
+                                simplicity,
+                                which is, of course, clearly reflected in my portfolio.
+                            </p>
+
 
                         </div>
 
@@ -121,7 +172,7 @@
                     </div>
                 </div>
 
-            </section>
+            </section> -->
 
 
             <section id="skills" style="scroll-margin-top: 120px">
@@ -258,12 +309,18 @@
                 <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
                     <div class="container">
                         <h1 class="display-6" style="text-align: center;">{ 4: Contact }</h1>
-                        <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                                href="https://github.com/smyshl">GitHub</a></p>
-                        <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                                href="https://www.linkedin.com/in/eugene-smyshliaev-99ab0b14b/">LinkedIn</a></p>
-                        <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                                href="mailto:e.smyshl@gmail.com">Email</a></p>
+                        <div id="contacts">
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="https://github.com/smyshl">GitHub</a></p>
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="https://www.linkedin.com/in/eugene-smyshliaev-99ab0b14b/">LinkedIn</a></p>
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="mailto:e.smyshl@gmail.com">Email</a></p>
+                        </div>
+
 
             </section>
 

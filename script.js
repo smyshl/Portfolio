@@ -29,29 +29,29 @@ function shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget) {
     let counter = 0;
     const cyclesLimit = Math.floor(3500 / 75);
 
-    fullStackTarget.innerText = "Backend";
-    fullStackTarget.style.alignSelf = "flex-start";
+    // fullStackTarget.innerText = "Backend";
+    // fullStackTarget.style.alignSelf = "flex-start";
 
-    const shuffleFullStackIntervalId = setInterval(() => {
+    // const shuffleFullStackIntervalId = setInterval(() => {
 
-        if (fullStackTarget.innerText === "Full Stack") {
-            fullStackTarget.innerText = "Backend";
+    //     if (fullStackTarget.innerText === "Full Stack") {
+    //         fullStackTarget.innerText = "Backend";
             
-        } else if(fullStackTarget.innerText === "Backend") {
-            fullStackTarget.innerText = "Frontend"
-        } else fullStackTarget.innerText = "Backend";
+    //     } else if(fullStackTarget.innerText === "Backend") {
+    //         fullStackTarget.innerText = "Frontend"
+    //     } else fullStackTarget.innerText = "Backend";
 
-        // console.log(fullStackTarget.style.alignSelf);
+    //     // console.log(fullStackTarget.style.alignSelf);
         
 
-        if (fullStackTarget.style.alignSelf === "") {
-            fullStackTarget.style.alignSelf = "flex-start";
+    //     if (fullStackTarget.style.alignSelf === "") {
+    //         fullStackTarget.style.alignSelf = "flex-start";
             
-        } else if(fullStackTarget.style.alignSelf === "flex-start") {
-            fullStackTarget.style.alignSelf = "flex-end"
-        } else fullStackTarget.style.alignSelf = "flex-start";
+    //     } else if(fullStackTarget.style.alignSelf === "flex-start") {
+    //         fullStackTarget.style.alignSelf = "flex-end"
+    //     } else fullStackTarget.style.alignSelf = "flex-start";
 
-    }, 1000)
+    // }, 1000)
 
   const shuffleNamesIntervalId = setInterval(() => {
     // console.log(makeRandomString(firstNameTarget.innerText.length));
@@ -66,7 +66,7 @@ function shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget) {
     
     if (counter === cyclesLimit) {
         clearInterval(shuffleNamesIntervalId);
-        clearInterval(shuffleFullStackIntervalId);
+        // clearInterval(shuffleFullStackIntervalId);
         firstNameTarget.innerText = 'Eugene';
         lastNameTarget.innerText = 'Smyshliaev';
         fullStackTarget.innerText = 'Full Stack';
@@ -75,13 +75,14 @@ function shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget) {
   }, 100);
 };
 
-console.log(document.getElementById('bio').offsetHeight);
+console.log(document.getElementById('collapseAll').offsetHeight);
 
 
-document.getElementById('bio').offsetHeight === 0 && shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget);
+document.getElementById('collapseAll').offsetHeight === 0 && shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget);
 
 setInterval(() => {
-    document.getElementById('bio').offsetHeight === 0 && shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget);
+    console.log(document.getElementById('collapseAll').offsetHeight);
+    document.getElementById('collapseAll').offsetHeight === 0 && shuffleNames(firstNameTarget, lastNameTarget, fullStackTarget);
 }, 20 * 1000)
 
 

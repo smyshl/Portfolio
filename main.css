@@ -38,3 +38,8 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
+#collapseSkills {
+    display: flex;
+    
+}

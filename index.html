@@ -10,164 +10,306 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 
+    <script src="./script.js" async defer></script>
+
 </head>
+
 
 <body>
 
-    <div id="mainWrapper" style="margin-top: 120px;">
+    <div id="mainWrapper" class="mainWrapper">
 
-        <header>
+        <div class="nameWrapper" id="nameWrapper">
+            <h1 class="display-6" style="text-align: center;">
+                <a id="nameLink" class="link-body-emphasis link-underline link-underline-opacity-0"
+                    data-bs-toggle="collapse" href="#collapseAll" aria-expanded="false" aria-controls="collapseAll"
+                    style="padding-top: 0; font-size: 2.4rem; font-weight: 600;">
+                    <div
+                        style="height: 5rem; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        {
+                        <div id="fullStack" style="font-size: 1.8rem; width: 9rem; margin-left: 0.3rem;">Full Stack
+                        </div>
+                        <div style="font-size: 1.8rem;">Developer:</div>
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top">
-                <div class="container-fluid" style="align-items: center;">
-                    <a class="navbar-brand" style="padding: 8px; padding-top: 0; font-size: 2.2rem; font-weight: 600;"
-                        href="#"><span style="font-size: 1.5rem; margin-right: 4rem;">{ Full Stack Developer
-                            }</span>Eugene Smyshliaev </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+                        <div id="firstName" style="width: 8rem; margin-left: 1.2rem;">Eugene</div>
+                        <div id="lastName" style="width: 15rem; ">Smyshliaev</div> }
+                    </div>
+                </a>
+            </h1>
+        </div>
 
-                        </ul>
+        <script>
+            const nameWrapper = document.getElementById('nameWrapper');
+
+            nameWrapper.addEventListener('click', () => {
+                nameWrapper.classList.toggle('sticky');
+            })
+        </script>
+
+
+
+        <div class="collapse" id="collapseAll">
+
+
+
+            <section id="bio" style="scroll-margin-top: 120px">
+
+                <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                    <div class="container">
+
+                        <h1 class="display-6" style="text-align: center;"> <a
+                                class="link-body-emphasis link-underline link-underline-opacity-0"
+                                data-bs-toggle="collapse" href="#collapseBio" aria-expanded="false"
+                                aria-controls="collapseBio">
+                                { 0: Bio }</a></h1>
+
+                        <div class="collapse show" id="collapseBio">
+                            <p class="lead" style="text-align: justify; min-height: 13rem;">
+                                <img id="photoBio" src="./img/20240905_183344_1.jpg"
+                                    class="img-fluid lazyload rounded-circle" alt="...">
+
+                                Born in Ukraine and raised in Russia, I am an engineer in the field of
+                                nuclear
+                                energy.
+                                A technically oriented person with a broad perspective and deep understanding of
+                                processes,
+                                focused on the future and seeking opportunities to realize myself along the way.
+                                Besides that, I am a kind and cheerful person, a caring father and husband, and my
+                                final
+                                project
+                                was about hamsters. Actually, it wasn't, but it was about them too. And I also love
+                                simplicity,
+                                which is, of course, clearly reflected in my portfolio.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <section id="skills" style="scroll-margin-top: 120px">
+
+                <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                    <div class="container">
+
+                        <h1 class="display-6" style="text-align: center;"> <a
+                                class="link-body-emphasis link-underline link-underline-opacity-0"
+                                data-bs-toggle="collapse" href="#collapseSkills" aria-expanded="false"
+                                aria-controls="collapseSkills">
+                                { 1: Skills }</a></h1>
+
+                        <div class="collapse" id="collapseSkills">
+
+                            <div style="display: flex; flex-direction: row;">
+
+                                <div style="padding-right: 2rem;">
+
+                                    <div>
+                                        <p class="lead" style="text-align: justify;">Full Stack Developer experienced in
+                                            HTML,
+                                            CSS, Javascript, OOP, NodeJS,
+                                            React,
+                                            Redux, Git, PostgreSQL. Possess strong skills in logic, algorithmic and
+                                            system
+                                            thinking
+                                            that
+                                            help to design, develop, test and launch functional applications. Broad
+                                            knowledge,
+                                            engineering
+                                            skills, the ability to identify key aspects, while seeing the whole task,
+                                            and a
+                                            quick
+                                            learning
+                                            capability enable efficient understanding of tasks and conditions, allowing
+                                            the
+                                            development
+                                            of
+                                            solutions for both client-side and server-side. Looking for new
+                                            opportunities to
+                                            apply
+                                            knowledge
+                                            and skills in full stack development of applications of any scale.</p>
+                                    </div>
+
+                                    <div>
+                                        <p class="lead" style="text-align: center;">[ HTML, CSS, Bootstrap, Javascript,
+                                            Typescript,
+                                            OOP,
+                                            NodeJS, JSON, API, HTTP, Express, React, Redux, Git,
+                                            SQL, PostgreSQL, Google Cloud API ]</p>
+                                    </div>
+
+                                </div>
+                                <div style="text-align: center;">
+                                    <img id="photoCv" src="./img/20240924_CV.jpg" alt="View CV" title="View CV"
+                                        data-bs-toggle="modal" data-bs-target="#cvModal">
+                                    <a class="link-underline link-underline-opacity-0"
+                                        href="./FullstackDeveloper_Eugene_Smyshliaev_CV.pdf"
+                                        download="FullstackDeveloper_Eugene_Smyshliaev_CV.pdf" title="Download CV">
+                                        Download CV</a>
+                                </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+
+                                        <div class="modal-body"
+                                            style="display: flex; justify-content: center; align-items: center;">
+                                            <img id="photoCvBig" src="./img/20240924_CV.jpg">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <section id="education" style="scroll-margin-top: 120px">
+
+                <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                    <div class="container">
+                        <h1 class="display-6" style="text-align: center;"><a
+                                class="link-body-emphasis link-underline link-underline-opacity-0"
+                                data-bs-toggle="collapse" href="#collapseEducation" aria-expanded="false"
+                                aria-controls="collapseEducation">{ 2: Education
+                                }</a></h1>
+                        <div class="collapse" id="collapseEducation">
+                            <p class="lead" style="text-align: center;">Full Stack Web Development, Python and
+                                JavaScript program
+                                Developers Institute, TLV Coding Bootcamp, Ramat Gan, Israel</p>
+                            <p class="lead" style="text-align: center;">Master degree in Nuclear power plants
+                                engineering,
+                                Moscow Power Engineering Institute (Technical University), Moscow, Russia
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </nav>
 
-        </header>
+            </section>
 
-        <section id="bio" style="scroll-margin-top: 120px">
+            <section id="projects" style="scroll-margin-top: 120px">
 
-            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px; margin-left: auto; margin-right: auto;">
-                <div class="container">
-                    <h1 class="display-6" style="text-align: center;">{ Bio }</h1>
-                    <p class="lead">Born in Ukraine and raised in Russia, I am an engineer in the field of nuclear
-                        energy.
-                        A technically oriented person with a broad perspective and deep understanding of processes,
-                        focused on the future and seeking opportunities to realize myself along the way.
-                        Besides that, I am a kind and cheerful person, a caring father and husband, and my final project
-                        was about hamsters. Actually, it wasn't, but it was about them too. And I also love simplicity,
-                        which is, of course, clearly reflected in my portfolio.</p>
+                <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                    <div class="container">
+                        <h1 class="display-6" style="text-align: center;"><a
+                                class="link-body-emphasis link-underline link-underline-opacity-0"
+                                data-bs-toggle="collapse" href="#collapseProjects" aria-expanded="false"
+                                aria-controls="collapseProjects">{ 3: Projects
+                                }</a></h1>
+                        <div class="collapse" id="collapseProjects">
+
+
+                            <div style="display: flex; flex-direction: row; margin-top: 1.5rem;">
+                                <div style="padding-right: 2rem;">
+                                    <p class="lead" style="margin-bottom: 1rem; text-align: center;">
+                                        <a href="https://hamsters-net.onrender.com/" target="_blank" class="link-underline link-underline-opacity-0">
+                                            Hamsters
+                                            Network.<br>A safe space for parents to share photos of their children with
+                                            relatives.</a>
+                                    </p>
+
+                                    <ul style="list-style-type: none;">
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Utilized Google Cloud Storage for
+                                                private
+                                                storage
+                                                of photos</p>
+                                        </li>
+                                        <p class="lead" style="margin-bottom: 0;">Used authenticated URLs for safely
+                                            receiving
+                                            files</p>
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Implemented user registration and
+                                                authentication
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Utilized registration of new users
+                                                only
+                                                via
+                                                invitation links</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Utilized JSON Web Tokens to store
+                                                encrypted user
+                                                information client-side</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Used Neon PostgreSQL for storing
+                                                database
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="lead" style="margin-bottom: 0;">Used in general NodeJS, Express
+                                                for
+                                                server-side
+                                                and React, @mui/material,
+                                                axios for client-side</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div>
+
+                                    <a href="https://hamsters-net.onrender.com/" target="_blank" >
+
+                                    <img src="./img/hamsters_net_img_1.jpg" alt="Hamsters Network" title="Hamsters Network" 
+                                    style="width: 20rem; border: 1px solid #1975cb; border-radius: 5%; box-shadow: 5px 5px 20px -7px">
+
+                                    </a>
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-        </section>
 
 
-        <section id="skills" style="scroll-margin-top: 120px">
+            </section>
 
-            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
-                <div class="container">
-                    <h1 class="display-6" style="text-align: center;">{ Skills }</h1>
-                    <p class="lead">Full Stack Developer experienced in HTML, CSS, Javascript, OOP, NodeJS, React,
-                        Redux, Git, PostgreSQL. Possess strong skills in logic, algorithmic and system thinking that
-                        help to design, develop, test and launch functional applications. Broad knowledge, engineering
-                        skills, the ability to identify key aspects, while seeing the whole task, and a quick learning
-                        capability enable efficient understanding of tasks and conditions, allowing the development of
-                        solutions for both client-side and server-side. Looking for new opportunities to apply knowledge
-                        and skills in full stack development of applications of any scale.</p>
-                    <p class="lead" style="text-align: center;">{ HTML, CSS, Bootstrap, Javascript, Typescript, OOP,
-                        NodeJS, JSON, API, HTTP, Express, React, Redux, Git,
-                        SQL, PostgreSQL, Google Cloud API }</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" style="scroll-margin-top: 120px">
-
-            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
-                <div class="container">
-                    <h1 class="display-6" style="text-align: center;">{ Education }</h1>
-                    <p class="lead">Full Stack Web Development, Python and JavaScript program
-                        Developers Institute, TLV Coding Bootcamp, Ramat Gan, Israel</p>
-                    <p class="lead">Master degree in Nuclear power plants engineering,
-                        Moscow Power Engineering Institute (Technical University), Moscow, Russia
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="projects" style="scroll-margin-top: 120px">
-
-            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
-                <div class="container">
-                    <h1 class="display-6" style="text-align: center;"><a
-                            href="https://di-final-project-child-social-network-lz8d.onrender.com/">{ Projects: Hamsters
-                            Network }</a></h1>
-                    <p class="lead" style="margin-bottom: 0;">A safe space for families to share photos of their
-                        children.</p>
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Utilized Google Cloud Storage for private storage
-                                of photos</p>
-                        </li>
-                        <p class="lead" style="margin-bottom: 0;">Used authenticated URLs for safely receiving files</p>
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Implemented user registration and authentication
-                            </p>
-                        </li>
-
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Utilized registration of new users only via
-                                invitation links</p>
-                        </li>
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Utilized JSON Web Tokens to store encrypted user
-                                information client-side</p>
-                        </li>
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Used Neon PostgreSQL for storing database</p>
-                        </li>
-                        <li>
-                            <p class="lead" style="margin-bottom: 0;">Used in general NodeJS, Express for server-side
-                                and React, @mui/material,
-                                axios for client-side</p>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-
-
-        </section>
-
-        <section id="contact" style="scroll-margin-top: 120px">
+            <section id="contact" style="scroll-margin-top: 120px">
 
 
 
-            <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
-                <div class="container">
-                    <h1 class="display-6" style="text-align: center;">{ Contact }</h1>
-                    <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                            href="https://github.com/smyshl">GitHub</a></p>
-                    <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                            href="https://www.linkedin.com/in/eugene-smyshliaev-99ab0b14b/">LinkedIn</a></p>
-                    <p class="lead" style="margin-bottom: 0.5rem; text-align: center;"><a
-                            href="mailto:e.smyshl@gmail.com">Email</a></p>
+                <div class="jumbotron jumbotron-fluid " style="margin-top: 56px;">
+                    <div class="container">
+                        <h1 class="display-6" style="text-align: center;">{ 4: Contact }</h1>
+                        <div id="contacts">
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="https://github.com/smyshl">GitHub</a></p>
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="https://www.linkedin.com/in/eugene-smyshliaev-99ab0b14b/">LinkedIn</a></p>
+                            <p class="lead" style="margin: 0.5rem; text-align: center;"><a
+                                    class="link-underline link-underline-opacity-0"
+                                    href="mailto:e.smyshl@gmail.com">Email</a></p>
+                        </div>
 
-        </section>
 
+            </section>
+
+        </div>
 
     </div>
 

@@ -1,3 +1,71 @@
-/* * {
-    border: 1px solid black;
+@font-face {
+    font-family: 'Eurostar-Regular-Extended';
+    src:url('./fonts/Eurostar-Regular-Extended.ttf.woff') format('woff'),
+        url('./fonts/Eurostar-Regular-Extended.ttf.svg#Eurostar-Regular-Extended') format('svg'),
+        url('./fonts/Eurostar-Regular-Extended.ttf.eot'),
+        url('./fonts/Eurostar-Regular-Extended.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin-top: 3rem;
+}
+
+#photoBio {
+  float: left;
+  width: 13rem;
+  margin: 0 1.5rem 1rem 0;
+}
+
+#photoCv {
+    /* float: left; */
+    width: 13rem;
+    /* margin: 0 1.5rem 1rem 0; */
+    cursor: pointer;
+  }
+
+.nameWrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  /* transition: all 0.5s ease; */
+  width: 100vw;  
+}
+
+.nameWrapper.sticky {
+  /* font-family: 'Eurostar-Regular-Extended'; */
+  position: fixed;
+  top: 0;
+  /* left: 50%;
+    transform: translateX(-50%); */
+  /* align-items: center; */
+  /* margin-bottom: 5rem; */
+  background-color: white;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh;
+  align-items: center;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* #collapseSkills {
+    display: flex;
+
 } */
+
+
+section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}

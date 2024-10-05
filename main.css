@@ -1,16 +1,17 @@
 @font-face {
-    font-family: 'Eurostar-Regular-Extended';
-    src:url('./fonts/Eurostar-Regular-Extended.ttf.woff') format('woff'),
-        url('./fonts/Eurostar-Regular-Extended.ttf.svg#Eurostar-Regular-Extended') format('svg'),
-        url('./fonts/Eurostar-Regular-Extended.ttf.eot'),
-        url('./fonts/Eurostar-Regular-Extended.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Eurostar-Regular-Extended";
+  src: url("./fonts/Eurostar-Regular-Extended.ttf.woff") format("woff"),
+    url("./fonts/Eurostar-Regular-Extended.ttf.svg#Eurostar-Regular-Extended")
+      format("svg"),
+    url("./fonts/Eurostar-Regular-Extended.ttf.eot"),
+    url("./fonts/Eurostar-Regular-Extended.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 body {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 #photoBio {
@@ -20,17 +21,24 @@ body {
 }
 
 #photoCv {
-    /* float: left; */
-    width: 13rem;
-    /* margin: 0 1.5rem 1rem 0; */
-    cursor: pointer;
-  }
+  /* float: left; */
+  width: 13rem;
+  /* margin: 0 1.5rem 1rem 0; */
+  cursor: pointer;
+}
+
+.projectImg {
+  width: 20rem;
+  border: 1px solid #1975cb;
+  border-radius: 5%;
+  box-shadow: 5px 5px 20px -7px;
+}
 
 .nameWrapper {
   margin-top: auto;
   margin-bottom: auto;
   /* transition: all 0.5s ease; */
-  width: 100vw;  
+  width: 100vw;
 }
 
 .nameWrapper.sticky {
@@ -54,9 +62,9 @@ body {
 }
 
 #contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* #collapseSkills {
@@ -64,8 +72,7 @@ body {
 
 } */
 
-
 section {
-    margin-left: 5vw;
-    margin-right: 5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }

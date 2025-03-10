@@ -1,86 +1,294 @@
 function makeListOfWords() {
     const listOfWords = [
         {
-            wordInHewbrew: 'שולחן',
-            wordInRussian: 'стол',
+            wordInHewbrew: 'שֻׁלְחָן',
             wordTranscriptionInRussian: 'шульхан',
-            sentenceInHewbrew: 'גל השולח, מתחת לשולחן',
-            sentenceInRussian: 'на столе, под столом',
-            sentenceTranscriptionInRussian: 'аль hа-шульхан, митахат ле-шульхан',
+            wordInRussian: 'стол',
+            sentenceInHewbrew: 'עַל הַשֻּׁלְחָן, מִתַּחַת לַשֻּׁלְחָן',
+            sentenceTranscriptionInRussian: 'аль ha-шульхан, митахат ле-шульхан',
+            sentenceInRussian: 'на столе, под столом'
         },
         {
-            wordInHewbrew: 'בתיאבון',
-            wordInRussian: 'приятного аппетита',
+            wordInHewbrew: 'בְּתֵאָבוֹן',
             wordTranscriptionInRussian: 'бетеавон',
-            sentenceInHewbrew: '!בוקר טוב, בתיאבון',
-            sentenceInRussian: 'Доброе утро, приятного аппетита!',
-            sentenceTranscriptionInRussian: 'бокер тов, бетеавон!',
+            wordInRussian: 'приятного аппетита',
+            sentenceInHewbrew: 'בְּתֵאָבוֹן לְכֻלָּם',
+            sentenceTranscriptionInRussian: 'бетеавон',
+            sentenceInRussian: 'приятного аппетита всем'
         },
         {
-            wordInHewbrew: 'סלט ירקות',
-            wordInRussian: 'овощной салат',
+            wordInHewbrew: 'סָלַט יְרָקוֹת',
             wordTranscriptionInRussian: 'салат еракот',
-            sentenceInHewbrew: 'הגכר אוכל סלט ירקות',
-            sentenceInRussian: 'Мужчина ест овощной салат',
-            sentenceTranscriptionInRussian: 'hа гевер охель салат еракот',
+            wordInRussian: 'зеленый салат',
+            sentenceInHewbrew: 'אַבָּא שֶׁלִּי אוֹהֵב סָלַט יְרָקוֹת',
+            sentenceTranscriptionInRussian: 'аба шели оhев салат еракот',
+            sentenceInRussian: 'мой папа любит зеленый салат'
         },
         {
-            wordInHewbrew: 'עולם מרתק',
-            wordInRussian: 'удивительный мир',
+            wordInHewbrew: 'עוֹלָם מְרַתֵּק',
             wordTranscriptionInRussian: 'олам мератек',
-            sentenceInHewbrew: 'אנחנו רואים עולם מדהים',
-            sentenceInRussian: 'Мы видим удивительный мир',
-            sentenceTranscriptionInRussian: 'анахну роим олам мератек',
+            wordInRussian: 'увлекательный мир',
+            sentenceInHewbrew: 'בֵּן שֶׁלִּי אוֹהֵב אַגָּדָה עַל הָעוֹלָם מְרַתֵּק',
+            sentenceTranscriptionInRussian: 'бен шели оheв агада аль hа-олам мератек',
+            sentenceInRussian: 'мой сын любит сказку про волшебный мир'
         },
         {
-            wordInHewbrew: 'צריך',
-            wordInRussian: 'нуждаюсь',
-            wordTranscriptionInRussian: 'царих',
-            sentenceInHewbrew: 'צריך לקנות אוכל',
-            sentenceInRussian: 'Нужно купить еду',
+            wordInHewbrew: 'צָרִיךְ',
+            wordTranscriptionInRussian: 'царих ',
+            wordInRussian: 'нужно, должен',
+            sentenceInHewbrew: 'צָרִיךְ לִקְנוֹת אֹכֶל',
             sentenceTranscriptionInRussian: 'царих ликнот охель',
+            sentenceInRussian: 'нужно купить пищу'
         },
         {
-            wordInHewbrew: 'לשכוח',
-            wordInRussian: 'забывать',
-            wordTranscriptionInRussian: 'лешкоах',
-            sentenceInHewbrew: 'הוא יכול לשכוח אותך',
-            sentenceInRussian: 'Он может тебя забыть',
-            sentenceTranscriptionInRussian: 'hу яхоль лишкоах отах',
+            wordInHewbrew: 'שׁוֹכֵחַ, שׁוֹכַחַת',
+            wordTranscriptionInRussian: 'шохеах, шохахат',
+            wordInRussian: 'я забываю; он забывает/ты (м.р.) забываешь; она забывает/ты (ж.р.) забываешь ',
+            sentenceInHewbrew: 'לִשְׁכֹּחַ מִכָּל הַצָּרוֹת, לִשְׁכֹּחַ אֶת הֶעָבָר',
+            sentenceTranscriptionInRussian: 'лишкоах ми-коль ha-царот, лишкоах эт ha-авар',
+            sentenceInRussian: 'забыть обо всех бедах, забыть прошлое'
         },
         {
-            wordInHewbrew: 'בבוקר',
-            wordInRussian: 'утром',
+            wordInHewbrew: 'בַּבֹּקֶר',
             wordTranscriptionInRussian: 'ба-бокер',
-            sentenceInHewbrew: 'הוא קורא בבוקר',
-            sentenceInRussian: 'Он читает утром',
-            sentenceTranscriptionInRussian: 'hу корэ ба-бокер',
+            wordInRussian: 'утром',
+            sentenceInHewbrew: 'בַּבֹּקֶר אֲנִי לוֹמֶדֶת',
+            sentenceTranscriptionInRussian: 'ба-бокер ани ломедет',
+            sentenceInRussian: 'утром я учусь'
         },
         {
-            wordInHewbrew: 'כל ערב',
-            wordInRussian: 'каждый вечер',
+            wordInHewbrew: 'כָּל עֶרֶב ',
             wordTranscriptionInRussian: 'коль эрев',
-            sentenceInHewbrew: 'כל ערב אנחנו צופים בטלוויזיה',
-            sentenceInRussian: 'Каждый вечер мы смотрим телевизор',
-            sentenceTranscriptionInRussian: 'коль эрев анахну цофим бетелевизия',
+            wordInRussian: 'каждый вечер',
+            sentenceInHewbrew: 'כָּל עֶרֶב אֲנַחְנוּ רוֹאִים סְרָטִים',
+            sentenceTranscriptionInRussian: 'коль эрев анахну роим сратим',
+            sentenceInRussian: 'каждый вечер мы смотрим фильмы'
         },
         {
-            wordInHewbrew: 'אוהב',
-            wordInRussian: 'любит (мужской род)',
-            wordTranscriptionInRussian: 'оhэв',
-            sentenceInHewbrew: 'היא אוהבת חלב',
-            sentenceInRussian: 'Она любит молоко',
-            sentenceTranscriptionInRussian: 'hи оhэвет халав',
+            wordInHewbrew: 'אוֹהֵב, אוֹהֶבֶת',
+            wordTranscriptionInRussian: 'оhев, оhевет',
+            wordInRussian: 'я люблю; он любит / ты (м.р.) любишь; она любит /ты (ж.р.) любишь',
+            sentenceInHewbrew: 'הוּא אוֹהֵב לְבַשֵּׁל / הִיא אוֹהֶבֶת לְצַיֵּר',
+            sentenceTranscriptionInRussian: 'hу oheв левашель/hи оhевет лецаер',
+            sentenceInRussian: 'он любит готовить/она любит рисовать'
         },
         {
-            wordInHewbrew: 'מדינה',
-            wordInRussian: 'страна',
-            wordTranscriptionInRussian: 'медина',
-            sentenceInHewbrew: 'מדינת ישראל',
-            sentenceInRussian: 'Страна Израиль',
-            sentenceTranscriptionInRussian: 'мединат исраэль',
+            wordInHewbrew: 'רוֹצֶה, רוֹצָה',
+            wordTranscriptionInRussian: 'роце, роца',
+            wordInRussian: 'я хочу (м.р., ж.р.), ты (м.р.) хочешь, ты (ж.р.) хочешь, он хочет, он хочет',
+            sentenceInHewbrew: 'אֲנִי רוֹצֶה/רוֹצָה לָגוּר בְּיִשְׂרָאֵל',
+            sentenceTranscriptionInRussian: 'ани роце/роца лагур бе-Исраэль',
+            sentenceInRussian: 'я хочу жить в Израиле'
         },
-    ]
+        {
+            wordInHewbrew: 'טוֹב, טוֹבָה',
+            wordTranscriptionInRussian: 'тов, това',
+            wordInRussian: 'хороший, хорошая',
+            sentenceInHewbrew: 'יוֹם טוֹב, כָּל טוּב, חֲבֵרָה טוֹבָה',
+            sentenceTranscriptionInRussian: 'йом тов, коль тув, хавера това',
+            sentenceInRussian: 'хороший день, всех благ, хорошая подруга'
+        },
+        {
+            wordInHewbrew: 'נֶחְמָד, נֶחְמָדָה',
+            wordTranscriptionInRussian: 'нэхмад, нэхмада',
+            wordInRussian: 'симпатичный, симпатичная',
+            sentenceInHewbrew: 'כֶּלֶב נֶחְמָד, בַּחוּרָה נֶחְמָדָה',
+            sentenceTranscriptionInRussian: 'келев нэхмад, бахура нэхмада',
+            sentenceInRussian: 'симпатичный пес, симпатичная девшка'
+        },
+        {
+            wordInHewbrew: 'קֹדֶם',
+            wordTranscriptionInRussian: 'кодэм',
+            wordInRussian: 'раньше, прежде, в прошлом',
+            sentenceInHewbrew: 'קֹדֶם, כְּשֶׁגַּרְתִּי בָּעִיר, הָלַכְתִּי לַיָּם כָּל יוֹם ',
+            sentenceTranscriptionInRussian: 'кодем кше гарти ба-ир халахти ла-ям коль йом',
+            sentenceInRussian: 'Раньше, когда я жил в городе, я ходил на море каждый день.'
+        },
+        {
+            wordInHewbrew: 'קֹדֶם',
+            wordTranscriptionInRussian: 'кодэм',
+            wordInRussian: 'раньше, прежде, в прошлом',
+            sentenceInHewbrew: 'קֹדֶם, לִפְנֵי שֶׁהִתְחַלְתִּי לַעֲבֹד כָּאן, עָבַדְתִּי בְּחֶבְרָה אַחֶרֶת',
+            sentenceTranscriptionInRussian: 'кодем лифней ше-итхальти лаавод кан авадти бе-хевра ахерет',
+            sentenceInRussian: 'Раньше, до того как я начал работать здесь, я работал в другой компании.'
+        },
+        {
+            wordInHewbrew: 'קֹדֶם כֹּל',
+            wordTranscriptionInRussian: 'кодем коль',
+            wordInRussian: 'прежде всего',
+            sentenceInHewbrew: 'קֹדֶם כֹּל בּוֹאוּ נִבְדֹּק  הַאִם  הַכֹּל מוּכָן',
+            sentenceTranscriptionInRussian: 'кодем коль боу нивдок ha-им haколь мухан',
+            sentenceInRussian: 'Прежде всего, давайте проверим, все ли готово.'
+        },
+        {
+            wordInHewbrew: 'אַחַר כָּךְ',
+            wordTranscriptionInRussian: 'ахар ках',
+            wordInRussian: 'после этого, затем',
+            sentenceInHewbrew: 'קֹדֶם נְבַקֵּר בִּירוּשָׁלַיִם, אַחַר כָּךְ נִיסַּע לְיָם הַמֶּלַח',
+            sentenceTranscriptionInRussian: 'кодем невакер бе-ерушалаим, ахар ках ниса ле-ям ha-мелах',
+            sentenceInRussian: ' Сначала мы посетим Иерусалим, затем поедем на Мертвое море.'
+        },
+        {
+            wordInHewbrew: 'אַחַר כָּךְ',
+            wordTranscriptionInRussian: 'ахар ках',
+            wordInRussian: 'после этого, затем',
+            sentenceInHewbrew: ' אֲסַיֵּם אֶת הַפְּרוֹיֵקְט, אַחַר כָּךְ אֶקַּח חֻפְשָׁה',
+            sentenceTranscriptionInRussian: 'асайем эт ha-проект, ахар ках эках хуфша',
+            sentenceInRussian: ' Я закончу проект, потом возьму отпуск.'
+        },
+        {
+            wordInHewbrew: 'מוֹרֶה, מוֹרָה',
+            wordTranscriptionInRussian: 'морэ, мора',
+            wordInRussian: 'учитель, учительница',
+            sentenceInHewbrew: 'מוֹרֶה לְעִבְרִית, מוֹרֶה לְמוּזִיקָה',
+            sentenceTranscriptionInRussian: 'морэ ле-иврит, морэ ле-музика',
+            sentenceInRussian: 'учитель иврита, учитель музыки'
+        },
+        {
+            wordInHewbrew: 'מְנַהֵל, מְנַהֶלֶת',
+            wordTranscriptionInRussian: 'менаhель, менаhелет',
+            wordInRussian: 'руководитель, руководительница, менеджер',
+            sentenceInHewbrew: 'מְנַהֵל פְּרוֹיֵקְט',
+            sentenceTranscriptionInRussian: 'менаhель проект',
+            sentenceInRussian: 'менеджер проекта'
+        },
+        {
+            wordInHewbrew: 'מְנַהֵל, מְנַהֶלֶת',
+            wordTranscriptionInRussian: 'менаhель, менаhелет',
+            wordInRussian: 'руководитель, руководительница, менеджер',
+            sentenceInHewbrew: 'מְנַהֶלֶת מַשְׁאַבֵּי אֱנוֹש',
+            sentenceTranscriptionInRussian: 'менаhель машъабей энош',
+            sentenceInRussian: 'HR, менеджер по кадрам'
+        },
+        {
+            wordInHewbrew: 'מְנַהֵל, מְנַהֶלֶת',
+            wordTranscriptionInRussian: 'менаhель, менаhелет',
+            wordInRussian: 'руководитель, руководительница, менеджер',
+            sentenceInHewbrew: 'מְנַהֵל שִׁוּוּק',
+            sentenceTranscriptionInRussian: 'менаhель шивук',
+            sentenceInRussian: 'менеджер по маркетингу'
+        },
+        {
+            wordInHewbrew: 'מְנַהֵל, מְנַהֶלֶת',
+            wordTranscriptionInRussian: 'менаhель, менаhелет',
+            wordInRussian: 'руководитель, руководительница, менеджер',
+            sentenceInHewbrew: 'אֲנִי מְנַהֵל צְוָתִים מְגֻוָּנִים ',
+            sentenceTranscriptionInRussian: 'ани менаhель цватим мегуваним',
+            sentenceInRussian: 'Я управляю разнообразными командами'
+        },
+        {
+            wordInHewbrew: 'מְנַהֵל, מְנַהֶלֶת',
+            wordTranscriptionInRussian: 'менаhель, менаhелет',
+            wordInRussian: 'руководитель, руководительница, менеджер',
+            sentenceInHewbrew: 'הוּא מְנַהֵל אֶת הַפְּרוֹיֵקְט עִם מַגָּע אִישִׁי ',
+            sentenceTranscriptionInRussian: 'hу менаhель эт ha-проект им мага иши',
+            sentenceInRussian: 'Он руководит проектом, используя индивидуальный подход'
+        },
+        {
+            wordInHewbrew: 'מִשְׁפָּחָה',
+            wordTranscriptionInRussian: 'мишпаха',
+            wordInRussian: 'семья',
+            sentenceInHewbrew: 'הַמִּשְׁפָּחָה שֶׁלִּי גְּדוֹלָה',
+            sentenceTranscriptionInRussian: 'ha-мишпаха шели гдола',
+            sentenceInRussian: 'У меня большая семья'
+        },
+        {
+            wordInHewbrew: 'מִשְׁפָּחָה',
+            wordTranscriptionInRussian: 'мишпаха',
+            wordInRussian: 'семья',
+            sentenceInHewbrew: 'אֲנִי אוֹהֵב/אוֹהֶבֶת אֶת הַמִּשְׁפָּחָה שֶׁלִּי',
+            sentenceTranscriptionInRussian: 'ани оhев/оhевет эт ha-мишпаха шели',
+            sentenceInRussian: 'Я люблю свою семью'
+        },
+        {
+            wordInHewbrew: 'דּוּד שֶׁמֶשׁ',
+            wordTranscriptionInRussian: 'дуд шемеш',
+            wordInRussian: 'солнечный бойлер',
+            sentenceInHewbrew: 'קָנִינוּ בַּיִת עִם דּוּד שֶׁמֶשׁ מֻבְנֶה',
+            sentenceTranscriptionInRussian: 'канину байт им дуд шемеш мувнэ',
+            sentenceInRussian: 'Мы купили дом со встроенным солнечным бойлером'
+        },
+        {
+            wordInHewbrew: 'קוֹרֵא, קוֹרֵאת',
+            wordTranscriptionInRussian: 'я читаю; он читает/ты читаешь (м.р.); она читает / ты читаешь (ж.р.) ',
+            wordInRussian: 'коре, корет',
+            sentenceInHewbrew: 'הוּא קוֹרֵא סֵפֶר מְעַנְיֵן',
+            sentenceTranscriptionInRussian: 'hу корэ сефер меаньен',
+            sentenceInRussian: 'Он читает интересную книгу'
+        },
+        {
+            wordInHewbrew: 'קוֹרֵא, קוֹרֵאת',
+            wordTranscriptionInRussian: 'я читаю; он читает/ты читаешь (м.р.); она читает / ты читаешь (ж.р.) ',
+            wordInRussian: 'коре, корет',
+            sentenceInHewbrew: 'הַיַּלְדָּה קוֹרֵאת בְּקוֹל רָם',
+            sentenceTranscriptionInRussian: 'ha-яльда корэт бе-коль рам',
+            sentenceInRussian: 'Девочка читает вслух'
+        },
+        {
+            wordInHewbrew: 'מֵבִיא, מְבִיאָה',
+            wordTranscriptionInRussian: 'я приношу, привожу; он приносит, приводит/ты приносишь, приводишь (м.р.); она приносит, приводит / ты приносишь, приводишь (ж.р.) ',
+            wordInRussian: 'меви, мевиа',
+            sentenceInHewbrew: 'הַמּוֹרָה מֵבִיאָה דֻּגְמָאוֹת טוֹבוֹת',
+            sentenceTranscriptionInRussian: 'ha-мора мевиа дугмаот товот',
+            sentenceInRussian: 'Учительница приводит хорошие примеры'
+        },
+        {
+            wordInHewbrew: 'מֵבִיא, מְבִיאָה',
+            wordTranscriptionInRussian: 'я приношу, привожу; он приносит, приводит/ты приносишь, приводишь (м.р.); она приносит, приводит / ты приносишь, приводишь (ж.р.) ',
+            wordInRussian: 'меви, мевиа',
+            sentenceInHewbrew: 'הוּא מְבִיאַ עוּגָה לִמְסִבָּה',
+            sentenceTranscriptionInRussian: 'hу меви уга ле-месиба',
+            sentenceInRussian: 'Он приносит торт на вечеринку'
+        },
+        {
+            wordInHewbrew: 'חָדָשׁ',
+            wordTranscriptionInRussian: 'хадаш',
+            wordInRussian: 'новый',
+            sentenceInHewbrew: 'יֵשׁ לִי חָבֵר חָדָשׁ',
+            sentenceTranscriptionInRussian: 'еш ли хавер хадаш',
+            sentenceInRussian: 'У меня новый друг'
+        },
+        {
+            wordInHewbrew: 'חֲדָשָׁה',
+            wordTranscriptionInRussian: 'хадаша',
+            wordInRussian: 'новая',
+            sentenceInHewbrew: 'יֵשׁ לִי שִׂמְלָה חֲדָשָׁה',
+            sentenceTranscriptionInRussian: 'еш ли симла хадаша',
+            sentenceInRussian: 'У меня новое платье'
+        },
+        {
+            wordInHewbrew: 'גָּמִישׁ',
+            wordTranscriptionInRussian: 'гамиш',
+            wordInRussian: 'гибкий, упругий, эластичный',
+            sentenceInHewbrew: 'זֶה כַּדּוּר גָּמִישׁ, אֶפְשָׁר לְשַׂחֵק בּוֹ בַּגַּן',
+            sentenceTranscriptionInRussian: 'зе кадур гамиш, эфшар лесахек бо ба-ган',
+            sentenceInRussian: 'Это упругий мяч, с ним можно играть в саду'
+        },
+        {
+            wordInHewbrew: 'גָּמִישׁ',
+            wordTranscriptionInRussian: 'гамиш',
+            wordInRussian: 'гибкий, упругий, эластичный',
+            sentenceInHewbrew: 'הַיַּלְדָּה גְּמִישָׁה, הִיא עוֹשָׂה סְפּוֹרְט כָּל יוֹם',
+            sentenceTranscriptionInRussian: 'ha-яльда гмиша, hи оса спорт коль йом',
+            sentenceInRussian: 'Девочка гибкая, она занимается спортом каждый день'
+        },
+        {
+            wordInHewbrew: 'בֶּן כַּמָּה אַתָּה/בַּת כַּמָּה אַתְּ',
+            wordTranscriptionInRussian: 'сколько тебе лет (м.р.)/сколько тебе лет (ж.р.)',
+            wordInRussian: 'бен кама ата/бат кама ат',
+            sentenceInHewbrew: 'תִּשְׁאֲלוּ אֶת מִיכַל בַּת כַּמָּה אַתְּ',
+            sentenceTranscriptionInRussian: 'тишъалу эт Михаль бат кама ат',
+            sentenceInRussian: 'Спросите Михаль сколько ей лет'
+        },
+        {
+            wordInHewbrew: 'אֹשֶׁר וְעֹשֶׁר',
+            wordTranscriptionInRussian: 'счастья и достатка!',
+            wordInRussian: 'ошер ве-ошер',
+            sentenceInHewbrew: 'אֲנִי מְאַחֵל לָךְ אֹשֶׁר וְעֹשֶׁר',
+            sentenceTranscriptionInRussian: 'ани меахель лах ошер ве-ошер',
+            sentenceInRussian: 'Я желаю тебе Счастья и достатка'
+        }
+        ]
     return listOfWords;
 }
 
@@ -108,7 +316,7 @@ popUpDivWrapper.style.bottom = 0;
 popUpDivWrapper.style.right = 0;
 popUpDivWrapper.style.border = '1px black solid';
 popUpDivWrapper.style.borderRadius = '10px';
-// popUpDivWrapper.style.width = '28vw';
+popUpDivWrapper.style.maxWidth = '40vw';
 // popUpDivWrapper.style.minHeight = '45vh';
 popUpDivWrapper.style.marginRight = '1vw';
 popUpDivWrapper.style.marginBottom = '1.5vh';
